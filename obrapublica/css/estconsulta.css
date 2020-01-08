@@ -1,0 +1,38 @@
+ 
+{
+ margin: 0px;
+ padding: 0px;
+ background: 
+}
+
+.container {
+    width: 98%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+div.container {
+  border: 2px solid #1e78a8;
+  
+  border-radius: 30px 15px 15px 15px;
+	-moz-border-radius: 30px 15px 15px 15px;
+	-webkit-border-radius: 30px 15px 15px 15px;
+	
+  box-shadow: 10px 4px 15px -2px rgba(0,0,0,0.69);
+	-webkit-box-shadow: 10px 4px 15px -2px rgba(0,0,0,0.69);
+	-moz-box-shadow: 10px 4px 15px -2px rgba(0,0,0,0.69);
+	
+}
+
+#titulo{
+  text-align: center;
+}
+
+#logo2{
+  text-align: right;
+}
+.container-fluid{
+	width: 90%;
+    margin-top: 5px;
+    padding: 10px;
+}

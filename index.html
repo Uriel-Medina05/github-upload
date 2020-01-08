@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf8">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49098438-1', 'inegi.org.mx');
+      ga('send', 'pageview');
+    </script>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="mdm6ico.png"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="mdm6ico.png">
+    <link rel="apple-touch-icon-precomposed" href="mdm6ico.png">
+
+    <meta property="og:title" content="Mapa Digital de M&eacute;xico en l&iacute;nea" /> 
+    <meta property="og:image" content="img/logoMini.png" /> 
+    <meta property="og:description" content="Realic&eacute; una consulta en el Mapa Digital de M&eacute;xico en l&iacute;nea, atrav&eacute;z del portal de INEGI y deseo compartirla" /> 
+
+    <META HTTP-EQUIV="expires" CONTENT="Mon, 19 jan 2015 08:00:00 GMT">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="js/frameworks/jquery/css/custom-theme/jquery-ui-1.10.3.custom.css" />
+
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.12&key=AIzaSyAToi_hL19uDD_b_TnirgR0-J56RplDIJs&sensor=false"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.12&key=AIzaSyAToi_hL19uDD_b_TnirgR0-J56RplDIJs&sensor=false"></script>
+    <script src="js/frameworks/jquery/js/jquery-1.9.1.js"></script>
+    <script src="js/frameworks/jquery/js/jquery-ui-1.10.3.custom.js"></script>
+    <script src="js/frameworks/jquery/js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="js/frameworks/amplify/amplify.js"></script>
+    <script src="js/frameworks/lz-string/lz-string.min.js"></script>
+    <script src="js/frameworks/base64/base64.js"></script>
+    <script src="js/frameworks/history/history.js"></script>
+    <script src="js/frameworks/chroma/chroma.min.js"></script>
+    <script src="js/frameworks/highcharts/highcharts.js"></script>
+    <script src="js/frameworks/highcharts/modules/data.js"></script>
+    <script src="js/frameworks/highcharts/modules/drilldown.js"></script>
+    <script src="js/frameworks/upload/js/jquery.iframe-transport.js"></script>
+    <script src="js/frameworks/upload/js/jquery.fileupload.js"></script>
+    <script src="js/frameworks/upload/js/jquery.ui.widget.js"></script>
+    <script src="js/frameworks/cookie/jquery.cookie.js"></script>
+
+    <script type="text/javascript" src="js/frameworks/d3/d3.js"></script>
+    <script type="text/javascript" src="js/frameworks/d3/d3.geom.js"></script>
+    <script type="text/javascript" src="js/frameworks/d3/d3.layout.js"></script>
+    <script type="text/javascript" src="js/frameworks/d3/CodeFlower.js"></script>
+    <script type="text/javascript" src="js/frameworks/d3/dataConverter.js"></script>
+    <script type="text/javascript" src="js/frameworks/html2canvas/dist/html2canvas.js"></script>
+    <script type="text/javascript" src="js/frameworks/html2canvas/dist/canvg.js"></script>
+    <script type="text/javascript" src="js/frameworks/jsPdf/jsPdf.js"></script>
+   
+    <script type="text/javascript" src="json2.js"></script>
+    <script type="text/javascript" src="proj4js-combined.js"></script>
+    <script data-main="js/main.js" src="js/frameworks/require/require.js"></script>
+   
+   
+    <title>CIEGEN Nayarit</title>
+</head>
+
+<body>
+<div id="main">
+    <div id="header" style="display:none" class="no-print">
+    	<div class="headerBackground">
+    		<img id="headerLogoINEGI" src="img/headerINEGI.png"/>
+    		<img id="headerLogoMDM" src="img/headerMDM.png"/>
+    	</div>
+    </div>
+    <div id="content">
+        <div id="panel-left"></div>
+        <div id="middle">
+            <div id="panel-center">
+                <div id="map"></div>
+            </div>
+            <div id="panel-bottom"></div>
+        </div>
+        <div id="panel-right"></div>
+    </div>
+</div>
+
+    <div id="item_popup"></div>
+    <!-- <script src="js/panelDinamico.js"></script>!> -->
+    </body>
+    <div id="modal-form" class="modal-form"></div>
+    </body>
+</html>
